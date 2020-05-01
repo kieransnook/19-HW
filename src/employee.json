@@ -1,0 +1,83 @@
+[
+  {
+    "id": 1,
+    "name": "Jim",
+    "phone":"",
+    "email":"Jimhalpert@dundermifflin.com",
+    "occupation": "sales",
+    "age":"29"
+  },
+  {
+    "id": 2,
+    "name": "Pam",
+    "phone":"",
+    "email":"pammypam@example.com",
+    "occupation": "receptionist",
+    "age":"28"
+  },
+  {
+    "id": 3,
+    "name": "Dwight",
+    "phone":"404-865-1234",
+    "email":"BearsnBeets@example.com",
+    "occupation": "sales",
+    "age":"29"
+  },
+  {
+    "id": 4,
+    "name": "Andy",
+    "phone":"543-123-8745",
+    "email":"Cornellrox@Cornell.edu",
+    "occupation": "sales",
+    "age":"30"
+  },
+  {
+    "id": 5,
+    "name": "Kevin",
+    "phone":"657-234-5679",
+    "email":"KevinMalone@dundermifflin.com",
+    "occupation": "accounting",
+    "age":"31"
+  },
+  {
+    "id": 6,
+    "name": "Michael",
+    "phone":"654-987-4321",
+    "email":"Michaelscott@dundermifflin.com",
+    "occupation": "Regional Manager",
+    "age":"48"
+  },
+  {
+    "id": 7,
+    "name": "Angela",
+    "phone":"475-086-2687",
+    "email":"Catlover00@example.com",
+    "occupation": "Accounting",
+    "age":"36"
+  },
+  {
+    "id": 8,
+    "name": "Oscar",
+    "phone":"645-874-6534",
+    "email":"OscarMartinez@dundermifflin.com",
+    "occupation": "Accounting",
+    "age":"32"
+  },
+  {
+    "id": 9,
+    "name": "Creed",
+    "phone":"543-865-3075",
+    "email":"Creedbratton@example.com",
+    "occupation": "quality control",
+    "age":"75"
+  },
+  {
+    "id": 10,
+    "name": "David",
+    "phone":"479-012-9872",
+    "email":"Davidwallace@dundermifflin.com",
+    "occupation": "CEO",
+    "age":"45"
+  }
+  
+]
