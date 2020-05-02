@@ -10,7 +10,7 @@ function App() {
   <>
     <Head />
     <br/>
-    <Search/>
+    
     <br/>
     <EmployeeTable />
   </>

@@ -4,7 +4,9 @@ import"./search.css";
 
 function Search(props) {
     return (
-      <input type="text" 
+      <input 
+      
+      type="text" 
       id="searchBox" 
       placeholder="asdasdad" 
       value={props.search} 
