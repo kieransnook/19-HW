@@ -6,10 +6,10 @@ function Search(props) {
     return (
       <input type="text" 
       id="searchBox" 
-      placeholder="Search" 
+      placeholder="asdasdad" 
       value={props.search} 
       name="search"
-      onChange={props.handleSearchChange} ></input>
+      onSubmit={props.handleSearchChange} ></input>
     );
   }
   
