@@ -1,6 +1,7 @@
 import React from "react";
 import "./table.css";
-import API from "../../utils/API";import Search from "../Search/Search"
+import API from "../../utils/API";
+import Search from "../Search/Search";
 
 class Table extends React.Component {
   state = {
@@ -52,7 +53,9 @@ class Table extends React.Component {
       const temp = [...this.state.allemployees];
       console.log(searchTerm);
       let empfilter = temp.filter((employee) => {
-        console.log(employee.name.first.toLowerCase().includes(searchTerm));
+        console.log(
+          employee.name.first.toLowerCase().includes(searchTerm)
+        );
         return employee.name.first.toLowerCase().includes(searchTerm);
       });
 
@@ -67,51 +70,51 @@ class Table extends React.Component {
   render() {
     return (
       <>
-      <div id="Cont1" className="container">
-        <div className="col">
+        <div id="Cont1" className="container">
           <div className="col">
-            <table className="table table-hover table-bordered">
-              <thead>
-                <tr id="subHead">
-                  <th>Image</th>
-                  <th>
-                    Name
-                    <button id="sortBtn" onClick={this.sortByName}>
-                      Sort
-                    </button>
-                  </th>
-                  <th>Phone</th>
-                  <th>Email</th>
-                  <th>username</th>
-                  <th>Password</th>
-                  <th>Age</th>
-                </tr>
-              </thead>
-              <tbody>
-                {this.state.employees &&
-                  this.state.employees.map((person) => (
-                    <tr key={person.login.uuid}>
-                      <td>
-                        <img
-                          src={person.picture.thumbnail}
-                          alt="thumbnail"
-                        />
-                      </td>
-                      <td>
-                        {person.name.first} {person.name.last}
-                      </td>
-                      <td>{person.phone}</td>
-                      <td>{person.email}</td>
-                      <td>{person.login.username}</td>
-                      <td>{person.login.password}</td>
-                      <td>{person.dob.age}</td>
-                    </tr>
-                  ))}
-              </tbody>
-            </table>
+            <div className="col">
+              <table className="table table-hover table-bordered">
+                <thead>
+                  <tr id="subHead">
+                    <th>Image</th>
+                    <th>
+                      Name
+                      <button id="sortBtn" onClick={this.sortByName}>
+                        Sort
+                      </button>
+                    </th>
+                    <th>Phone</th>
+                    <th>Email</th>
+                    <th>username</th>
+                    <th>Password</th>
+                    <th>Age</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {this.state.employees &&
+                    this.state.employees.map((person) => (
+                      <tr key={person.login.uuid}>
+                        <td>
+                          <img
+                            src={person.picture.thumbnail}
+                            alt="thumbnail"
+                          />
+                        </td>
+                        <td>
+                          {person.name.first} {person.name.last}
+                        </td>
+                        <td>{person.phone}</td>
+                        <td>{person.email} </td>
+                        <td>{person.login.username}</td>
+                        <td>{person.login.password}</td>
+                        <td>{person.dob.age}</td>
+                      </tr>
+                    ))}
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
-      </div>
       </>
     );
   }
